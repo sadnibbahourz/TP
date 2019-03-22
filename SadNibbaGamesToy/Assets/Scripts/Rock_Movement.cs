@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Rock_Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 offset;
+
+    void OnMouseDown()
     {
-        
+
+        offset = gameObject.transform.position -
+            Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.y, 10.0f));
+
     }
 
-    // Update is called once per frame
+    private void OnMouseDrag()
+    {
+        Vector3 newPosition = new Vector3(Input.mousePosition.y, 10.0f);
+    }
+
     void Update()
     {
         
