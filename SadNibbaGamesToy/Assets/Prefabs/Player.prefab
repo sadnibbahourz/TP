@@ -187,6 +187,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 374353856844346491}
   spawnPoint: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
   speed: 1000
   maxSpeed: 2
   jumpForce: 5

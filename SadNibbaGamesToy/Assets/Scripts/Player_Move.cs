@@ -7,6 +7,7 @@ public class Player_Move : MonoBehaviour
     #region refrences
     public Rigidbody2D rb;
     public Transform spawnPoint;
+    public LayerMask groundLayer;
     #endregion
 
     #region Variabler
@@ -24,6 +25,7 @@ public class Player_Move : MonoBehaviour
     void FixedUpdate()
     {
         Walk();
+        Debug.DrawRay(transform.position, Vector2.down, Color.red);
         if (Groundcheck())
         {
             Jump();
@@ -56,7 +58,7 @@ public class Player_Move : MonoBehaviour
     }
     bool Groundcheck()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down,transform.lossyScale.y/2); // Der skal addes et ContactFilter2D
+        return Physics2D.Raycast(transform.position, Vector2.down,0.6f,groundLayer);
     }
     #endregion
 }

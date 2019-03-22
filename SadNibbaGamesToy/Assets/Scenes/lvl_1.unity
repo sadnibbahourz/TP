@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 897968521}
   - component: {fileID: 897968520}
   - component: {fileID: 897968523}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,16 +617,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7456150853146506046, guid: 02a7741bc44f55c4b95f6572c187c2e0,
-        type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 1367453069}
     - target: {fileID: 374353856844346490, guid: 02a7741bc44f55c4b95f6572c187c2e0,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7456150853146506046, guid: 02a7741bc44f55c4b95f6572c187c2e0,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1367453069}
     - target: {fileID: 374353856844346495, guid: 02a7741bc44f55c4b95f6572c187c2e0,
         type: 3}
       propertyPath: m_LocalPosition.x
