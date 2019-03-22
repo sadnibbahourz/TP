@@ -15,6 +15,7 @@ public class Player_Move : MonoBehaviour
     public float speed;
     public float maxSpeed = 5;
     public float jumpForce = 20;
+    float doubleckickTime = 0.25f;
     #endregion
     void Start()
     {
@@ -25,7 +26,8 @@ public class Player_Move : MonoBehaviour
     void FixedUpdate()
     {
         Walk();
-        Debug.DrawRay(transform.position, Vector2.down, Color.red);
+        FlipPlayer();
+        Dash();
         if (Groundcheck())
         {
             Jump();
@@ -59,6 +61,22 @@ public class Player_Move : MonoBehaviour
     bool Groundcheck()
     {
         return Physics2D.Raycast(transform.position, Vector2.down,0.6f,groundLayer);
+    }
+    void FlipPlayer()
+    {
+        if (Input.GetAxisRaw("Horizontal") == -1)
+        {
+            transform.localScale = new Vector2(-1, transform.lossyScale.y);
+        }
+        if (Input.GetAxisRaw("Horizontal") == 1)
+        {
+            transform.localScale = new Vector2(1, transform.lossyScale.y);
+        }
+    }
+    void Dash()
+    {
+
+        //doubleClick to dash
     }
     #endregion
 }
