@@ -190,6 +190,11 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+  right: 100
+  left: 97
   speed: 1000
   maxSpeed: 2
   jumpForce: 5
+  resetDoubletapTime: 0.25
+  dashForce: 5
+  dashTime: 0

@@ -692,5 +692,10 @@ PrefabInstance:
       propertyPath: startSpawnpoint
       value: 
       objectReference: {fileID: 1367453069}
+    - target: {fileID: 7366762829250454385, guid: 02a7741bc44f55c4b95f6572c187c2e0,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2c530a04e2874a840af46180843a472a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02a7741bc44f55c4b95f6572c187c2e0, type: 3}
