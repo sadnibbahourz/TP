@@ -195,6 +195,5 @@ MonoBehaviour:
   speed: 1000
   maxSpeed: 2
   jumpForce: 5
-  resetDoubletapTime: 0.25
+  resetDoubletapTime: 0.3
   dashForce: 5
-  dashTime: 0
