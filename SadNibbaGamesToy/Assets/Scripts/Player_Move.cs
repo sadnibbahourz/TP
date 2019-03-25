@@ -8,8 +8,6 @@ public class Player_Move : MonoBehaviour
     public Rigidbody2D rb;
     public Transform spawnPoint;
     public LayerMask groundLayer;
-    public KeyCode right;
-    public KeyCode left;
     #endregion
 
     #region Variabler
@@ -17,20 +15,13 @@ public class Player_Move : MonoBehaviour
     public float speed;
     public float maxSpeed = 5;
     public float jumpForce = 20;
-    int leftTotalTimes = 0;
-    int rightTotalTimes = 0;
-    public float resetDoubletapTime = 0.2f;
-    float doubletapTime = 0;
     public float dashForce;
+    public float dashTime = 1f;
+    private float dashTimer = 0;
     #endregion
     void Start()
     {
         transform.position = spawnPoint.position;
-    }
-
-    private void Update()
-    {
-        doubletapTime -= Time.deltaTime;
     }
     void FixedUpdate()
     {
@@ -87,32 +78,21 @@ public class Player_Move : MonoBehaviour
     void Dash() // skal gøres bedre
     {
 
-        if (Input.GetKeyDown(right))
+        //dashTime
+        dashTimer -= Time.deltaTime;
+        if (dashTimer >= 0) rb.gravityScale = 0;
+        else rb.gravityScale = 1;
+
+
+        if (Input.GetAxisRaw("Horizontal")==1 && Input.GetButtonDown("Dash"))
         {
-            rightTotalTimes += 1;
-            doubletapTime = resetDoubletapTime;
+            rb.velocity = new Vector2(dashForce, 0);
+            dashTimer = dashTime;
         }
-        if (Input.GetKeyDown(left))
+        if (Input.GetAxisRaw("Horizontal") == -1 && Input.GetButtonDown("Dash"))
         {
-            leftTotalTimes += 1;
-            doubletapTime = resetDoubletapTime;
-        }
-        if(doubletapTime <= 0)
-        {
-            rightTotalTimes = 0;
-            leftTotalTimes = 0;
-        }
-        if(rightTotalTimes >= 2)
-        {
-            rb.velocity = new Vector2(dashForce, rb.velocity.y);
-            rightTotalTimes = 0;
-            leftTotalTimes = 0;
-        }
-        if (leftTotalTimes >= 2)
-        {
-            rb.velocity = new Vector2(-dashForce, rb.velocity.y);
-            rightTotalTimes = 0;
-            leftTotalTimes = 0;
+            rb.velocity = new Vector2(-dashForce, 0);
+            dashTimer = dashTime;
         }
     }
     #endregion
