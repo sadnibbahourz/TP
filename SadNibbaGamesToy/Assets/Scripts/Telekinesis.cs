@@ -10,6 +10,7 @@ public class Telekinesis : MonoBehaviour
 
     #region Variables
     public float acceleration = 1f;
+    public Vector2 deadCenter = new Vector2(3, 3);
     #endregion
     private void OnMouseDrag()
     {
@@ -21,6 +22,8 @@ public class Telekinesis : MonoBehaviour
         {
             rb.AddForce(new Vector2(acceleration, 0)* Vector2.left);
         }
-    }
 
+        // bruge deadCenter så at objectet står stille når musen er i midten
+    }
+    
 }
