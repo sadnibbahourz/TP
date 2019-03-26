@@ -27,16 +27,27 @@ public class Player_Move : MonoBehaviour
     public float dashTime = 1f;
     private float dashTimer = 0;
     private bool faceingRight = true;
+    [Tooltip("Time between available dashes")]
+    public float dashCooldown = 5f;
+    private float dashCooldownTimer = 0;
     #endregion
     void Start()
     {
         transform.position = spawnPoint.position;
+    }
+
+    private void Update()
+    {
+        //Timers
+        dashTimer -= Time.deltaTime;
+        dashCooldownTimer -= Time.deltaTime;
     }
     void FixedUpdate()
     {
         Walk();
         FlipPlayer();
         Dash();
+
         if (Groundcheck())
         {
             Jump();
@@ -88,8 +99,7 @@ public class Player_Move : MonoBehaviour
     void Dash()
     {
 
-        //dashTime
-        dashTimer -= Time.deltaTime;
+        
         if (dashTimer >= 0)
         {
             rb.gravityScale = 0;
@@ -100,17 +110,21 @@ public class Player_Move : MonoBehaviour
             rb.gravityScale = 1;
             animator.SetBool("Dashing", false);
         }
-
-        // hvis man ser til x retning og trykker på "Dash" dasher man til x retning
-        if (faceingRight && Input.GetButtonDown("Dash"))
+        if (dashCooldownTimer <= 0) // Can only dash when DashCooldownTimer is over 0 or 0
         {
-            rb.velocity = new Vector2(dashForce, 0);
-            dashTimer = dashTime;
-        }
-        if (!faceingRight && Input.GetButtonDown("Dash"))
-        {
-            rb.velocity = new Vector2(-dashForce, 0);
-            dashTimer = dashTime;
+            // hvis man ser til x retning og trykker på "Dash" dasher man til x retning
+            if (faceingRight && Input.GetButtonDown("Dash"))
+            {
+                rb.velocity = new Vector2(dashForce, 0);
+                dashTimer = dashTime;
+                dashCooldownTimer = dashCooldown;
+            }
+            if (!faceingRight && Input.GetButtonDown("Dash"))
+            {
+                rb.velocity = new Vector2(-dashForce, 0);
+                dashTimer = dashTime;
+                dashCooldownTimer = dashCooldown;
+            }
         }
     }
     #endregion

@@ -160,3 +160,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 203030905437961692}
   acceleration: 20
+  deadCenterWidth: 0.5
+  maxSpeed: 3

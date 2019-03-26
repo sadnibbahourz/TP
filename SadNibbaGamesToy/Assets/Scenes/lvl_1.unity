@@ -706,11 +706,6 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1367453069}
-    - target: {fileID: 7456150853146506046, guid: 02a7741bc44f55c4b95f6572c187c2e0,
-        type: 3}
-      propertyPath: acceleration
-      value: 3000
-      objectReference: {fileID: 0}
     - target: {fileID: 374353856844346495, guid: 02a7741bc44f55c4b95f6572c187c2e0,
         type: 3}
       propertyPath: m_LocalPosition.x
