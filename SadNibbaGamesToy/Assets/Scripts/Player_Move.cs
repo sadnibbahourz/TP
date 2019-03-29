@@ -4,30 +4,50 @@ using UnityEngine;
 
 public class Player_Move : MonoBehaviour
 {
-    #region refrences
+    #region Refrences
     public Rigidbody2D rb;
     public Transform spawnPoint;
     public LayerMask groundLayer;
+    public Animator animator;
+
     #endregion
 
-    #region Variabler
+    #region Variables
+    
     float move;
-    public float speed;
+    [Header("Walk")]
+    [Tooltip("How fast the player walks from 0 to maxspeed")]
+    public float acceleration;
+    [Tooltip("How fast the player can walk, not movement overall")]
     public float maxSpeed = 5;
     public float jumpForce = 20;
-    float doubleckickTime = 0.25f;
+    [Header("Dash")]
+    public float dashForce;
+    [Tooltip("The time the player stays in the air before falling")]
+    public float dashTime = 1f;
+    private float dashTimer = 0;
+    private bool faceingRight = true;
+    [Tooltip("Time between available dashes")]
+    public float dashCooldown = 5f;
+    private float dashCooldownTimer = 0;
     #endregion
     void Start()
     {
         transform.position = spawnPoint.position;
     }
 
-    
+    private void Update()
+    {
+        //Timers
+        dashTimer -= Time.deltaTime;
+        dashCooldownTimer -= Time.deltaTime;
+    }
     void FixedUpdate()
     {
         Walk();
         FlipPlayer();
         Dash();
+
         if (Groundcheck())
         {
             Jump();
@@ -39,17 +59,18 @@ public class Player_Move : MonoBehaviour
 
     void Walk()
     {
-        move = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
-        rb.AddForce(new Vector2(move, 0));
-
+        move = Input.GetAxisRaw("Horizontal") * acceleration * Time.deltaTime;
         if (rb.velocity.x > maxSpeed)
         {
-            rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
+            move = 0;
         }
         if (rb.velocity.x < -maxSpeed)
         {
-            rb.velocity = new Vector2(-maxSpeed, rb.velocity.y);
+            move = 0;
         }
+        rb.AddForce(new Vector2(move, 0));
+
+        
     }
     void Jump()
     {
@@ -66,17 +87,45 @@ public class Player_Move : MonoBehaviour
     {
         if (Input.GetAxisRaw("Horizontal") == -1)
         {
+            faceingRight = false;
             transform.localScale = new Vector2(-1, transform.lossyScale.y);
         }
         if (Input.GetAxisRaw("Horizontal") == 1)
         {
+            faceingRight = true;
             transform.localScale = new Vector2(1, transform.lossyScale.y);
         }
     }
     void Dash()
     {
 
-        //doubleClick to dash
+        
+        if (dashTimer >= 0)
+        {
+            rb.gravityScale = 0;
+            animator.SetBool("Dashing", true);
+        }
+        else
+        {
+            rb.gravityScale = 1;
+            animator.SetBool("Dashing", false);
+        }
+        if (dashCooldownTimer <= 0) // Can only dash when DashCooldownTimer is over 0 or 0
+        {
+            // hvis man ser til x retning og trykker på "Dash" dasher man til x retning
+            if (faceingRight && Input.GetButtonDown("Dash"))
+            {
+                rb.velocity = new Vector2(dashForce, 0);
+                dashTimer = dashTime;
+                dashCooldownTimer = dashCooldown;
+            }
+            if (!faceingRight && Input.GetButtonDown("Dash"))
+            {
+                rb.velocity = new Vector2(-dashForce, 0);
+                dashTimer = dashTime;
+                dashCooldownTimer = dashCooldown;
+            }
+        }
     }
     #endregion
 }
