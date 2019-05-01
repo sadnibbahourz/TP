@@ -94,7 +94,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 374353856844346490}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2c530a04e2874a840af46180843a472a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 374353856844346490}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6e8d400438e9b644f8e3bf8eadd653b5, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -146,7 +146,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 374353856844346490}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2c530a04e2874a840af46180843a472a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -168,7 +168,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -205,14 +205,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c3904c296bd7c4c8db8485e325b2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  right: 100
+  left: 97
+  jump: 119
+  dash: 304
   rb: {fileID: 374353856844346491}
   spawnPoint: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
   animator: {fileID: 7003219097719627249}
-  acceleration: 3000
-  maxSpeed: 2
-  jumpForce: 5
+  speed: 5
+  jumpForce: 6
   dashForce: 6
   dashTime: 0.2
+  dashCooldown: 5
