@@ -36,11 +36,13 @@ public class Player_Move : MonoBehaviour
     private float dashCooldownTimer = 0;
 
    private float defaultGravityScale;
+   private Vector2 defaultScale;
     #endregion
     void Start()
     {
         transform.position = spawnPoint.position;
         defaultGravityScale = rb.gravityScale;
+        defaultScale = transform.localScale;
     }
 
     private void Update()
@@ -59,14 +61,14 @@ public class Player_Move : MonoBehaviour
         if (Input.GetKey(right))
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = defaultScale;
             animator.SetBool("Walking", true);
             faceingRight = true;
         }
         else if (Input.GetKey(left))
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-defaultScale.x, defaultScale.y);
             animator.SetBool("Walking", true);
             faceingRight = false;
         }

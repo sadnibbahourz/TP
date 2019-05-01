@@ -5,7 +5,7 @@ using UnityEngine;
 public class Telekinesis : MonoBehaviour
 {
     #region Refrences
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     #endregion
 
     #region Variables
@@ -13,6 +13,11 @@ public class Telekinesis : MonoBehaviour
     public float deadCenterWidth = 3f;
     public float maxSpeed = 5f;
     #endregion
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     private void OnMouseDrag()
     {
         float move = acceleration;

@@ -7,8 +7,9 @@ public class Smooth_Camera : MonoBehaviour
     public float dampTime = 0.15f;
     private Vector3 velocity = Vector3.zero;
     public Transform target;
+    public Vector2 clamp;
 
-    void Update ()
+    void FixedUpdate ()
     {
         if (target)
         {
@@ -17,6 +18,16 @@ public class Smooth_Camera : MonoBehaviour
             Vector3 destination = transform.position + delta;
             transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 
+            
+
+        }
+        if (transform.position.x <= clamp.x)
+        {
+            transform.position = transform.position = new Vector3(clamp.x, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x >= clamp.y)
+        {
+            transform.position = transform.position = new Vector3(clamp.y, transform.position.y, transform.position.z);
         }
     }
 

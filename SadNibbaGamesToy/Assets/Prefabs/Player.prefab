@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 374353856844346495}
   - component: {fileID: 374353856844346494}
   - component: {fileID: 374353856844346493}
-  - component: {fileID: 374353856844346492}
   - component: {fileID: 7366762829250454385}
   - component: {fileID: 374353856844346491}
   - component: {fileID: 7003219097719627249}
@@ -94,13 +93,13 @@ BoxCollider2D:
   m_GameObject: {fileID: 374353856844346490}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2c530a04e2874a840af46180843a472a, type: 2}
+  m_Material: {fileID: 6200000, guid: 6e8d400438e9b644f8e3bf8eadd653b5, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.024695873, y: -0.049314737}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.84999996, y: 0.65, z: 1, w: 0.9}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.4, y: 2.4}
     newSize: {x: 2.4, y: 2.4}
@@ -110,32 +109,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.25270462, y: 0.7040682}
-  m_EdgeRadius: 0
---- !u!61 &374353856844346492
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374353856844346490}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6e8d400438e9b644f8e3bf8eadd653b5, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.025669098, y: -0.43471205}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.4}
-    newSize: {x: 2.4, y: 2.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.055125877, y: 0.16750836}
   m_EdgeRadius: 0
 --- !u!58 &7366762829250454385
 CircleCollider2D:
@@ -150,9 +123,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.025737286, y: -0.5208132}
+  m_Offset: {x: -0.025737286, y: -0.42309666}
   serializedVersion: 2
-  m_Radius: 0.029051542
+  m_Radius: 0.12676811
 --- !u!50 &374353856844346491
 Rigidbody2D:
   serializedVersion: 4
