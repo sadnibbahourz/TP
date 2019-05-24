@@ -93,9 +93,9 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1.0465211
-  m_LinearDrag: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 3e11ddbc2ec775844b7217e3ea9c47b3, type: 2}
@@ -141,6 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c81ab40d27fe284ca503254b61b4298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 13
+  acceleration: 15000
   deadCenterWidth: 0.5
   maxSpeed: 3
