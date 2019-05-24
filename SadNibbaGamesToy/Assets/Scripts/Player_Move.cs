@@ -82,7 +82,10 @@ public class Player_Move : MonoBehaviour
     }
     bool Groundcheck()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down,0.6f,groundLayer);
+        if (Physics2D.Raycast(transform.position - new Vector3(0.15f, 0), Vector2.down, 0.6f, groundLayer) || Physics2D.Raycast(transform.position + new Vector3(0.15f, 0), Vector2.down, 0.6f, groundLayer))
+            return true;
+        else
+            return false;
     }
     void Dash()
     {
