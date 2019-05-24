@@ -31,7 +31,7 @@ public class Enemy_Movement : MonoBehaviour
     void Awake()
     {
         if (rb == null)
-         //rb = GetComponent<Rigidbody2D>();
+         rb = GetComponent<Rigidbody2D>();
 
         //random direction
         if (Mathf.Round(Random.value) == 1)
