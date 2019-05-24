@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296280972}
   - component: {fileID: 296280973}
+  - component: {fileID: 1057305708}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -80,6 +81,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1057305708
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296280971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bf24f99ce9b75c47964f45cb095f695, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &374353856844346490
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +111,6 @@ GameObject:
   - component: {fileID: 374353856844346495}
   - component: {fileID: 374353856844346493}
   - component: {fileID: 374353856844346491}
-  - component: {fileID: 7003219097719627249}
   - component: {fileID: 7456150853146506046}
   - component: {fileID: 1662622880}
   m_Layer: 0
@@ -164,25 +183,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &7003219097719627249
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374353856844346490}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e092ef8b1a1fd21468367e3b974739d8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7456150853146506046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +204,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
-  animator: {fileID: 7003219097719627249}
+  animator: {fileID: 7003219097719627249, guid: 02a7741bc44f55c4b95f6572c187c2e0,
+    type: 3}
   speed: 3
   jumpForce: 40
   dashForce: 6

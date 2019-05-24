@@ -49,7 +49,7 @@ public class Player_Move : MonoBehaviour
     {
         //functions
         Walk();
-        Dash();
+       // Dash();
         Jump();
     }
 
@@ -87,37 +87,37 @@ public class Player_Move : MonoBehaviour
         else
             return false;
     }
-    void Dash()
-    {
-        dashTimer -= Time.deltaTime;
-        dashCooldownTimer -= Time.deltaTime;
+    //void Dash()
+    //{
+    //    dashTimer -= Time.deltaTime;
+    //    dashCooldownTimer -= Time.deltaTime;
 
-        if (dashTimer >= 0)
-        {
-            rb.gravityScale = 0;
-            animator.SetBool("Dashing", true);
-        }
-        else
-        {
-            rb.gravityScale = defaultGravityScale;
-            animator.SetBool("Dashing", false);
-        }
-        if (dashCooldownTimer <= 0) // Can only dash when DashCooldownTimer is over 0 or 0
-        {
-            // hvis man ser til x retning og trykker på "Dash" dasher man til x retning
-            if (faceingRight && Input.GetKeyDown(dash))
-            {
-                rb.velocity = new Vector2(dashForce, 0);
-                dashTimer = dashTime;
-                dashCooldownTimer = dashCooldown;
-            }
-            if (!faceingRight && Input.GetKeyDown(dash))
-            {
-                rb.velocity = new Vector2(-dashForce, 0);
-                dashTimer = dashTime;
-                dashCooldownTimer = dashCooldown;
-            }
-        }
-    }
+    //    if (dashTimer >= 0)
+    //    {
+    //        rb.gravityScale = 0;
+    //        animator.SetBool("Dashing", true);
+    //    }
+    //    else
+    //    {
+    //        rb.gravityScale = defaultGravityScale;
+    //        animator.SetBool("Dashing", false);
+    //    }
+    //    if (dashCooldownTimer <= 0) // Can only dash when DashCooldownTimer is over 0 or 0
+    //    {
+    //        // hvis man ser til x retning og trykker på "Dash" dasher man til x retning
+    //        if (faceingRight && Input.GetKeyDown(dash))
+    //        {
+    //            rb.velocity = new Vector2(dashForce, 0);
+    //            dashTimer = dashTime;
+    //            dashCooldownTimer = dashCooldown;
+    //        }
+    //        if (!faceingRight && Input.GetKeyDown(dash))
+    //        {
+    //            rb.velocity = new Vector2(-dashForce, 0);
+    //            dashTimer = dashTime;
+    //            dashCooldownTimer = dashCooldown;
+    //        }
+    //    }
+    //}
     #endregion
 }

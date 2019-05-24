@@ -8,6 +8,7 @@ public class Smooth_Camera : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public Transform target;
     public Vector2 clamp;
+    public float clampup;
 
     void FixedUpdate ()
     {
@@ -28,6 +29,10 @@ public class Smooth_Camera : MonoBehaviour
         if (transform.position.x >= clamp.y)
         {
             transform.position = transform.position = new Vector3(clamp.y, transform.position.y, transform.position.z);
+        }
+        if (transform.position.y <= clampup)
+        {
+            transform.position = new Vector3(transform.position.x, clampup, transform.position.z);
         }
     }
 
