@@ -9,6 +9,7 @@ public class Telekinesis : MonoBehaviour
     #endregion
 
     #region Variables
+    [Range(3500,20000)]
     public float acceleration = 1f;
     public float deadCenterWidth = 3f;
     public float maxSpeed = 5f;
