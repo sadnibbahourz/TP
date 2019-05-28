@@ -98,5 +98,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dampTime: 0.15
   target: {fileID: 0}
-  clamp: {x: -17.77, y: 5}
+  clamp: {x: -19.7, y: 5}
   clampup: -1.4

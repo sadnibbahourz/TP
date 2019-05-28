@@ -77,6 +77,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restart: 27
+  player: {fileID: 0}
+  lowest: -5
 --- !u!82 &229447437
 AudioSource:
   m_ObjectHideFlags: 0
