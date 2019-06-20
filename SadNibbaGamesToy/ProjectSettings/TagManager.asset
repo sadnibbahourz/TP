@@ -50,6 +50,9 @@ TagManager:
   - name: Player
     uniqueID: 3830861757
     locked: 0
+  - name: Platform
+    uniqueID: 3744830513
+    locked: 0
   - name: Grass
     uniqueID: 2071645791
     locked: 0
