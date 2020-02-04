@@ -561,6 +561,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17329c098153d334d8796c66edc136da, type: 3}
 --- !u!1001 &490243775
@@ -630,6 +631,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     m_RemovedComponents: []
@@ -1165,6 +1168,7 @@ GameObject:
     m_Modifications:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 2185680728301702824, guid: 9aaa8310b406bd44c8c6582a6c157129,
         type: 3}
       propertyPath: m_Name
@@ -1172,6 +1176,8 @@ GameObject:
       objectReference: {fileID: 0}
     - target: {fileID: 2734924525507920506, guid: 9aaa8310b406bd44c8c6582a6c157129,
 =======
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
@@ -1348,6 +1354,7 @@ PrefabInstance:
     m_Modifications:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
       propertyPath: m_Name
@@ -1355,6 +1362,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
 =======
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     - target: {fileID: 3884621343648879583, guid: 3a86d9d5a5d1dbf45a2616889c531328,
@@ -1426,6 +1435,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 937389915}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
+=======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
@@ -1434,6 +1446,7 @@ PrefabInstance:
 --- !u!1 &1415366886
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2867,6 +2880,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249998231}
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
+=======
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 249998231}
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     m_Modifications:
     - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
@@ -2877,7 +2895,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -22.558
+=======
+      value: -16.811596
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
       value: -16.811596
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
@@ -2886,7 +2908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -2.572
+=======
+      value: -3.2037349
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
       value: -3.2037349
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
@@ -2895,7 +2921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0
+=======
+      value: 21.076172
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
       value: 21.076172
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
@@ -2904,6 +2934,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
+<<<<<<< HEAD
 <<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
@@ -18776,6 +18807,8 @@ PrefabInstance:
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[50].first.y
       value: 0
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
       objectReference: {fileID: 0}
 <<<<<<< HEAD
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
@@ -18819,6 +18852,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1475565480252579246, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
+=======
+      propertyPath: m_LocalRotation.z
+      value: -0.052027725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475565480252579246, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
       propertyPath: m_LocalRotation.w
       value: 0.99864566
@@ -18834,7 +18875,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4865479811399529087, guid: 1abaadd5602922348bbe70fa44205a1f,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+        type: 3}
+      propertyPath: m_Name
+      value: Grid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865479811399529085, guid: 1abaadd5602922348bbe70fa44205a1f,
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
         type: 3}
       propertyPath: m_Name
       value: Grid
@@ -19040,14 +19089,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[57].second.m_TileIndex
       value: 8
 =======
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     - target: {fileID: 4865479812343131205, guid: 1abaadd5602922348bbe70fa44205a1f,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+<<<<<<< HEAD
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
+=======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
       objectReference: {fileID: 0}
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
@@ -19086,6 +19141,7 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[58].second.m_TileColorIndex
       value: 6
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[58].second.m_TileFlags
@@ -19275,6 +19331,8 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[5].m_RefCount
       value: 3
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
 >>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
 =======
