@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -276,6 +276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7456150853146506046, guid: 02a7741bc44f55c4b95f6572c187c2e0,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1259722313}
     - target: {fileID: 374353856844346495, guid: 02a7741bc44f55c4b95f6572c187c2e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -331,11 +336,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7456150853146506046, guid: 02a7741bc44f55c4b95f6572c187c2e0,
-        type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 1259722313}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02a7741bc44f55c4b95f6572c187c2e0, type: 3}
 --- !u!1 &226419767 stripped
@@ -431,6 +431,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249998231}
     m_Modifications:
+    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -486,11 +491,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a, type: 3}
 --- !u!1001 &738173466
@@ -500,6 +500,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249998231}
     m_Modifications:
+    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -554,11 +559,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17329c098153d334d8796c66edc136da, type: 3}
@@ -663,6 +663,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249998231}
     m_Modifications:
+    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_Name
+      value: torch
+      objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -718,11 +723,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
-        type: 3}
-      propertyPath: m_Name
-      value: torch
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a, type: 3}
 --- !u!4 &937389915 stripped
@@ -744,6 +744,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1614601880}
     m_Modifications:
+    - target: {fileID: 1408878849015568231, guid: 93897509cd2a1444196148c79fe2bf23,
+        type: 3}
+      propertyPath: m_Name
+      value: Box
+      objectReference: {fileID: 0}
     - target: {fileID: 1408878849015568227, guid: 93897509cd2a1444196148c79fe2bf23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -798,11 +803,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408878849015568231, guid: 93897509cd2a1444196148c79fe2bf23,
-        type: 3}
-      propertyPath: m_Name
-      value: Box
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93897509cd2a1444196148c79fe2bf23, type: 3}
@@ -893,6 +893,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249998231}
     m_Modifications:
+    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_Name
+      value: torch (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -948,11 +953,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
-        type: 3}
-      propertyPath: m_Name
-      value: torch (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a, type: 3}
 --- !u!4 &1332582263 stripped
@@ -1006,6 +1006,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1614601880}
     m_Modifications:
+    - target: {fileID: 1408878849015568231, guid: 93897509cd2a1444196148c79fe2bf23,
+        type: 3}
+      propertyPath: m_Name
+      value: Box (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1408878849015568227, guid: 93897509cd2a1444196148c79fe2bf23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,11 +1065,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408878849015568231, guid: 93897509cd2a1444196148c79fe2bf23,
-        type: 3}
-      propertyPath: m_Name
-      value: Box (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93897509cd2a1444196148c79fe2bf23, type: 3}
@@ -1160,12 +1160,21 @@ GameObject:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 2185680728301702824, guid: 9aaa8310b406bd44c8c6582a6c157129,
         type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2734924525507920506, guid: 9aaa8310b406bd44c8c6582a6c157129,
+=======
+    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_Name
+      value: torch
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1331,12 +1340,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
         type: 3}
       propertyPath: m_Name
       value: torch (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3956936282339885704, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+=======
+    - target: {fileID: 3884621343648879583, guid: 3a86d9d5a5d1dbf45a2616889c531328,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884621343648879578, guid: 3a86d9d5a5d1dbf45a2616889c531328,
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.776823
@@ -1391,6 +1409,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 3884621343648879579, guid: 3a86d9d5a5d1dbf45a2616889c531328,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 937389915}
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a, type: 3}
 --- !u!1 &1415366886
@@ -1530,10 +1556,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 8754814136542891544, guid: 17329c098153d334d8796c66edc136da,
         type: 3}
       propertyPath: m_Name
       value: Wine (4)
+=======
+    - target: {fileID: 3956936282339885706, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_Name
+      value: torch
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
       objectReference: {fileID: 0}
     - target: {fileID: 8754814136542891548, guid: 17329c098153d334d8796c66edc136da,
         type: 3}
@@ -18711,6 +18744,7 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[50].first.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[50].second.m_TileIndex
       value: 8
@@ -18737,6 +18771,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[51].first.y
+=======
+    - target: {fileID: 1475565480252579246, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.052027725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475565480252579246, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99864566
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10e6873b2a8eaa645b9d4bf7fba1ca9a, type: 3}
+--- !u!1001 &4865479812375544462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4865479811399529087, guid: 1abaadd5602922348bbe70fa44205a1f,
+        type: 3}
+      propertyPath: m_Name
+      value: Grid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865479811399529085, guid: 1abaadd5602922348bbe70fa44205a1f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
@@ -18987,9 +19050,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[59].first.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[59].second.m_TileIndex
       value: 7
+=======
+    - target: {fileID: 4865479812343131205, guid: 1abaadd5602922348bbe70fa44205a1f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
       objectReference: {fileID: 0}
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[59].second.m_TileSpriteIndex
@@ -19031,6 +19101,7 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[60].second.m_TileColorIndex
       value: 6
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1874046207, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
       propertyPath: m_Tiles.Array.data[60].second.m_TileFlags
       value: 1
@@ -19147,6 +19218,8 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[5].m_RefCount
       value: 3
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of c56a3ec... Updated to Unity 2019.2.15f1
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1abaadd5602922348bbe70fa44205a1f, type: 3}
 --- !u!1001 &8754814135110872105
@@ -19160,16 +19233,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8754814136542891547, guid: 17329c098153d334d8796c66edc136da,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.drawMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8754814136542891547, guid: 17329c098153d334d8796c66edc136da,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 12.253738
       objectReference: {fileID: 0}
     - target: {fileID: 8754814136542891548, guid: 17329c098153d334d8796c66edc136da,
         type: 3}
@@ -19234,6 +19297,16 @@ PrefabInstance:
     - target: {fileID: 8754814136542891549, guid: 17329c098153d334d8796c66edc136da,
         type: 3}
       propertyPath: m_Size.y
+      value: 12.253738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754814136542891547, guid: 17329c098153d334d8796c66edc136da,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754814136542891547, guid: 17329c098153d334d8796c66edc136da,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
       value: 12.253738
       objectReference: {fileID: 0}
     m_RemovedComponents: []
